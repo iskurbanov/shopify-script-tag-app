@@ -1,7 +1,6 @@
 import gql from 'graphql-tag';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { Button, Card, Layout, Page, ResourceList, Stack } from '@shopify/polaris';
-import axios from 'axios';
 
 const CREATE_SCRIPT_TAG = gql`
     mutation scriptTagCreate($input: ScriptTagInput!) {
@@ -57,8 +56,10 @@ function ScriptPage() {
     <Page>
       <Layout>
         <Layout.Section>
-          <Card title="These are the script tags right now:" sectioned>
-            <p>Create or Delete a Script Tag</p>
+          <Card title="These are the Script Tags:" sectioned>
+            <p>
+              Create or Delete a Script Tag
+            </p>
           </Card>
         </Layout.Section>
         <Layout.Section secondary>
@@ -66,11 +67,11 @@ function ScriptPage() {
             <Button
               primary
               size="slim"
-              type='submit' onClick={() => {
+              type="submit" onClick={() => {
                 createScripts({
                   variables: {
                     input: {
-                      src: "https://305b659c.ngrok.io/test-script.js",
+                      src: "https://d733e9bf.ngrok.io/test-script.js",
                       displayScope: "ALL"
                     }
                   },
@@ -95,7 +96,9 @@ function ScriptPage() {
                   >
                     <Stack>
                       <Stack.Item>
-                        <p>{item.node.id}</p>
+                        <p>
+                          {item.node.id}
+                        </p>
                       </Stack.Item>
                       <Stack.Item>
                         <Button type='submit' onClick={() => {
@@ -107,7 +110,7 @@ function ScriptPage() {
                           })
                         }}>
                           Delete Script Tag
-                    </Button>
+                        </Button>
                       </Stack.Item>
                     </Stack>
                   </ResourceList.Item>

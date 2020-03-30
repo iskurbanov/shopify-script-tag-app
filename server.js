@@ -6,7 +6,8 @@ const next = require('next');
 const { default: createShopifyAuth } = require('@shopify/koa-shopify-auth');
 const { verifyRequest } = require('@shopify/koa-shopify-auth');
 const session = require('koa-session');
-const cors = require('@koa/cors');
+const koaBody = require('koa-body')
+
 
 dotenv.config();
 const { default: graphQLProxy } = require('@shopify/koa-shopify-graphql-proxy');
@@ -20,9 +21,48 @@ const handle = app.getRequestHandler();
 
 const { SHOPIFY_API_SECRET_KEY, SHOPIFY_API_KEY } = process.env;
 
+const server = new Koa();
+const router = new KoaRouter();
+
+var products = [];
+
+router.get('/api/products', async (ctx) => {
+  try {
+    ctx.body = {
+      status: 'success',
+      data: products
+    }
+  } catch (error) {
+    console.log(error)
+  }
+})
+
+router.post('/api/products', koaBody(), async (ctx) => {
+  try {
+    const body = ctx.request.body;
+    await products.push(body)
+    ctx.body = "Item Added"
+  } catch (error) {
+    console.log(error)
+  }
+})
+
+router.delete('/api/products', koaBody(), async (ctx) => {
+  try {
+    products = [];
+    ctx.body = "All items deleted!"
+  } catch (error) {
+    console.log(error)
+  }
+})
+
+// Router Middleware
+server.use(router.allowedMethods());
+server.use(router.routes());
+
 app.prepare().then(() => {
-  const server = new Koa();
-  const router = new KoaRouter();
+  
+  
   server.use(session(server));
   server.keys = [SHOPIFY_API_SECRET_KEY];
 
@@ -38,7 +78,6 @@ app.prepare().then(() => {
       ],
       afterAuth(ctx) {
         const { shop, accessToken } = ctx.session;
-        console.log('access token', accessToken)
         ctx.cookies.set('shopOrigin', shop, {
           httpOnly: false,
           secure: true,
@@ -52,22 +91,7 @@ app.prepare().then(() => {
   server.use(graphQLProxy({ version: ApiVersion.October19 }))
   server.use(verifyRequest());
 
-
-  router.get('/api/products', ctx => {
-    ctx.body = { text: "Hello Api" }
-  })
-
-  router.get('/custom-page', async ctx => {
-    await nextApp.render(ctx.req, ctx.res, '/myHandlerComponent', ctx.query);
-    ctx.respond = false;
-  });
-
-  // Router Middleware
-  server.use(router.allowedMethods());
-  server.use(router.routes());
-
-  // Enable CORS (required to let Shopify access this API)
-  server.use(cors());
+  
 
   server.use(async (ctx) => {
     await handle(ctx.req, ctx.res);
