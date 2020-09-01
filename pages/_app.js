@@ -23,7 +23,7 @@ class MyApp extends App {
         return (
             <React.Fragment>
                 <Head>
-                    <title>Sample App</title>
+                    <title>Zuffu</title>
                     <meta charSet="utf-8" />
                 </Head>
                 <Provider config={config}>
