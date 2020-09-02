@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { EmptyState, Layout, Page } from '@shopify/polaris';
+import { MediaCard } from '@shopify/polaris';
 import { ResourcePicker, TitleBar } from '@shopify/app-bridge-react';
 import store from 'store-js';
 import ProductList from '../components/ProductList';
@@ -55,14 +56,28 @@ function Index() {
             {emptyState ?
                 <Layout>
                     <EmptyState
-                        heading="Manage your inventory transfers"
-                        action={{
-                            content: 'Select Products',
-                            onAction: () => setModal({ open: true })
-                        }}
+                        heading="We are Zuffu"
+                        // action={{
+                        //     content: 'Select Products',
+                        //     onAction: () => setModal({ open: true })
+                        // }}
                         image="https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg"
                     >
-                        <p>Select Products</p>
+                        <p>We help you dynamically change prices based on where your visitor is from.</p>
+                        {/* <MediaCard
+                            title="Turn your side-project into a business"
+                            primaryAction={{
+                                content: 'Learn more',
+                                onAction: () => {},
+                            }}
+                            description={`In this course, you’ll learn how the Kular family turned their mom’s recipe book into a global business.`}
+                            popoverActions={[{content: 'Dismiss', onAction: () => {}}]}
+                        >
+                        <VideoThumbnail
+                            videoLength={80}
+                            thumbnailUrl="https://burst.shopifycdn.com/photos/smiling-businesswoman-in-office.jpg?width=1850"
+                        />
+                        </MediaCard> */}
                     </EmptyState>
                 </Layout>
                 :

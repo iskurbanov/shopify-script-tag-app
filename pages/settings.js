@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EmptyState, Layout, Page } from '@shopify/polaris';
+import { EmptyState, Layout, Page, MediaCard } from '@shopify/polaris';
 import { ResourcePicker, TitleBar } from '@shopify/app-bridge-react';
 import store from 'store-js';
 import ProductList from '../components/ProductList';
@@ -9,38 +9,30 @@ function Settings() {
 
 
     return (
-        <Page>
-            <TitleBar
-                primaryAction={{
-                    content: 'Select New Products',
-                    onAction: () => setModal({ open: true })
-                }}
-            />
-            <ResourcePicker
-                resourceType="Product"
-                showVariants={false}
-                open={modal.open}
-                onCancel={() => setModal({ open: false })}
-                onSelection={(resources) => handleSelection(resources)}
-            />
-            {emptyState ?
-                <Layout>
-                    <EmptyState
-                        heading="Manage your inventory transfers"
-                        action={{
-                            content: 'Select Products',
-                            onAction: () => setModal({ open: true })
-                        }}
-                        image="https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg"
-                    >
-                        <p>Select Products</p>
-                    </EmptyState>
-                </Layout>
-                :
-                <ProductList />
-            }
-        </Page>
-    )
+        // <div>
+        //     <p>hello</p>
+        // </div>
+        <MediaCard
+    title="Getting Started"
+    primaryAction={{
+      content: 'Learn about getting started',
+      onAction: () => {},
+    }}
+    description="Discover how Shopify can power up your entrepreneurial journey."
+    popoverActions={[{content: 'Dismiss', onAction: () => {}}]}
+  >
+    <img
+      alt=""
+      width="100%"
+      height="100%"
+      style={{
+        objectFit: 'cover',
+        objectPosition: 'center',
+      }}
+      src="https://burst.shopifycdn.com/photos/smiling-businesswoman-in-office.jpg?width=1850"
+    />
+  </MediaCard>
+      );
 
 }
 
