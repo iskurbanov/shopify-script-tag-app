@@ -55,30 +55,36 @@ function Index() {
             />
             {emptyState ?
                 <Layout>
-                    <EmptyState
+                    {/* <EmptyState
                         heading="We are Zuffu"
                         // action={{
                         //     content: 'Select Products',
                         //     onAction: () => setModal({ open: true })
                         // }}
                         image="https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg"
-                    >
-                        <p>We help you dynamically change prices based on where your visitor is from.</p>
-                        {/* <MediaCard
-                            title="Turn your side-project into a business"
-                            primaryAction={{
-                                content: 'Learn more',
-                                onAction: () => {},
-                            }}
-                            description={`In this course, you’ll learn how the Kular family turned their mom’s recipe book into a global business.`}
-                            popoverActions={[{content: 'Dismiss', onAction: () => {}}]}
-                        >
-                        <VideoThumbnail
-                            videoLength={80}
-                            thumbnailUrl="https://burst.shopifycdn.com/photos/smiling-businesswoman-in-office.jpg?width=1850"
-                        />
-                        </MediaCard> */}
-                    </EmptyState>
+                    > */}
+                        {/* <p>We help you dynamically change prices based on where your visitor is from.</p> */}
+                        <MediaCard
+    title="We are Zuffu"
+    primaryAction={{
+      content: 'Let\'s get started',
+      onAction: () => {},
+    }}
+    description="We help you dynamically change prices based on where your visitor is from."
+    popoverActions={[{content: 'Dismiss', onAction: () => {}}]}
+  >
+    <img
+      alt=""
+      width="100%"
+      height="100%"
+      style={{
+        objectFit: 'cover',
+        objectPosition: 'center',
+      }}
+      src="https://burst.shopifycdn.com/photos/smiling-businesswoman-in-office.jpg?width=1850"
+    />
+  </MediaCard>
+                    {/* </EmptyState> */}
                 </Layout>
                 :
                 <ProductList />

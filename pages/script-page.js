@@ -1,6 +1,8 @@
 import gql from 'graphql-tag';
+import React, { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { Button, Card, Layout, Page, ResourceList, Stack } from '@shopify/polaris';
+import { ResourcePicker, TitleBar } from '@shopify/app-bridge-react';
 
 const CREATE_SCRIPT_TAG = gql`
     mutation scriptTagCreate($input: ScriptTagInput!) {
@@ -47,6 +49,19 @@ function ScriptPage() {
   const [createScripts] = useMutation(CREATE_SCRIPT_TAG);
   const [deleteScripts] = useMutation(DELETE_SCRIPTTAG);
   const { loading, error, data } = useQuery(QUERY_SCRIPTTAGS);
+  const [modal, setModal] = useState({ open: false })
+
+  function handleSelection(resources) {
+    const idsFromResources = resources.selection.map((product) => product.id);
+    setModal({ open: false });
+    store.set('ids', idsFromResources)
+
+    const selectedProducts = resources.selection;
+
+    deleteApiData();
+
+    selectedProducts.map(product => makeApiCall(product));
+}
 
 
   if (loading) return <div>Loading…</div>;
@@ -54,6 +69,19 @@ function ScriptPage() {
 
   return (
     <Page>
+       <TitleBar
+                primaryAction={{
+                    content: 'Select New Products',
+                    onAction: () => setModal({ open: true })
+                }}
+            />
+            <ResourcePicker
+                resourceType="Product"
+                showVariants={false}
+                open={modal.open}
+                onCancel={() => setModal({ open: false })}
+                onSelection={(resources) => handleSelection(resources)}
+            />
       <Layout>
         <Layout.Section>
           <Card title="These are the Script Tags:" sectioned>
@@ -71,7 +99,7 @@ function ScriptPage() {
                 createScripts({
                   variables: {
                     input: {
-                      src: "https://827ab725bf5c.ngrok.io/test-script.js",
+                      src: "https://f334e47b4654.ngrok.io/test-script.js",
                       displayScope: "ALL"
                     }
                   },
