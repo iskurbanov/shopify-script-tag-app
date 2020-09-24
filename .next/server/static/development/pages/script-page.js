@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -179,7 +179,7 @@ function ScriptPage() {
       createScripts({
         variables: {
           input: {
-            src: "https://d733e9bf.ngrok.io/test-script.js",
+            src: "https://b056b7566d2b.ngrok.io/test-script.js",
             displayScope: "ALL"
           }
         },
@@ -219,14 +219,14 @@ function ScriptPage() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!************************************!*\
   !*** multi ./pages/script-page.js ***!
   \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/iskandarkurbanov/Desktop/script-tag-app/pages/script-page.js */"./pages/script-page.js");
+module.exports = __webpack_require__(/*! /Users/iskandarkurbanov/Desktop/Udemy Courses/shopify-script-tag-app-course/pages/script-page.js */"./pages/script-page.js");
 
 
 /***/ }),

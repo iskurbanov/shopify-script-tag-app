@@ -7844,10 +7844,10 @@ __export(__webpack_require__(/*! ./client */ "./node_modules/@shopify/app-bridge
 /*!*******************************************************!*\
   !*** ./node_modules/@shopify/app-bridge/package.json ***!
   \*******************************************************/
-/*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bugs, bundleDependencies, deprecated, description, devDependencies, files, gitHead, homepage, jsdelivr, license, main, name, private, publishConfig, repository, scripts, sideEffects, size-limit, types, unpkg, version, default */
+/*! exports provided: _args, _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _spec, _where, author, bugs, description, devDependencies, files, gitHead, homepage, jsdelivr, license, main, name, private, publishConfig, repository, scripts, sideEffects, size-limit, types, unpkg, version, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"_from\":\"@shopify/app-bridge\",\"_id\":\"@shopify/app-bridge@1.16.0\",\"_inBundle\":false,\"_integrity\":\"sha512-ym+ibTAzhYeqnvA42ZhR46bRrI5krFqPzx4yshB3CRqfelbdoUewbUBs0Qi4CYNqfzm0WAp1xOzmKo5hbU5IBw==\",\"_location\":\"/@shopify/app-bridge\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"tag\",\"registry\":true,\"raw\":\"@shopify/app-bridge\",\"name\":\"@shopify/app-bridge\",\"escapedName\":\"@shopify%2fapp-bridge\",\"scope\":\"@shopify\",\"rawSpec\":\"\",\"saveSpec\":null,\"fetchSpec\":\"latest\"},\"_requiredBy\":[\"#USER\",\"/\",\"/@shopify/app-bridge-react\",\"/@shopify/polaris\"],\"_resolved\":\"https://registry.npmjs.org/@shopify/app-bridge/-/app-bridge-1.16.0.tgz\",\"_shasum\":\"13d5a2c2152e4c9ec7a98990ac14f05a37ec8475\",\"_spec\":\"@shopify/app-bridge\",\"_where\":\"/Users/iskandarkurbanov/Desktop/script-tag-app\",\"author\":{\"name\":\"Shopify Inc.\"},\"bugs\":{\"url\":\"https://github.com/Shopify/app-bridge/issues\"},\"bundleDependencies\":false,\"deprecated\":false,\"description\":\"[![Build Status](https://travis-ci.com/Shopify/app-bridge.svg?token=RBRyvqQyN525bnfz7J8p&branch=master)](https://travis-ci.com/Shopify/app-bridge) [![codecov](https://codecov.io/gh/Shopify/app-bridge/branch/master/graph/badge.svg?token=nZ21m39Dr6)](https://codecov.io/gh/Shopify/app-bridge) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md) [![npm version](https://badge.fury.io/js/%40shopify%2Fapp-bridge.svg)](https://badge.fury.io/js/%40shopify%2Fapp-bridge.svg) [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@shopify/app-bridge.svg)](https://img.shields.io/bundlephobia/minzip/@shopify/app-bridge.svg)\",\"devDependencies\":{\"@types/node\":\"^10.12.5\",\"typescript\":\"3.2.1\"},\"files\":[\"/actions/\",\"/client/\",\"/umd/\",\"/util/\",\"/validate/\",\"/MessageTransport.d.ts\",\"/MessageTransport.js\",\"/development.d.ts\",\"/development.js\",\"/index.d.ts\",\"/index.js\",\"/production.d.ts\",\"/production.js\"],\"gitHead\":\"bc5f196b5270a46926ded456f6052ae3845e1acf\",\"homepage\":\"https://github.com/Shopify/app-bridge#readme\",\"jsdelivr\":\"umd/index.js\",\"license\":\"MIT\",\"main\":\"index.js\",\"name\":\"@shopify/app-bridge\",\"private\":false,\"publishConfig\":{\"access\":\"public\",\"@shopify:registry\":\"https://registry.npmjs.org\"},\"repository\":{\"type\":\"git\",\"url\":\"git+ssh://git@github.com/Shopify/app-bridge.git\"},\"scripts\":{\"build\":\"yarn build:tsc && yarn build:umd\",\"build:tsc\":\"NODE_ENV=production tsc\",\"build:umd\":\"NODE_ENV=production webpack -p\",\"check\":\"tsc --pretty --noEmit\",\"clean\":\"cat package.json | node -pe \\\"JSON.parse(require('fs').readFileSync('/dev/stdin').toString()).files.map(f => './'+f).join(' ')\\\" | xargs rm -rf\",\"pack\":\"yarn pack\",\"size\":\"size-limit\"},\"sideEffects\":false,\"size-limit\":[{\"limit\":\"16 KB\",\"path\":\"production.js\"}],\"types\":\"index.d.ts\",\"unpkg\":\"umd/index.js\",\"version\":\"1.16.0\"}");
+module.exports = JSON.parse("{\"_args\":[[\"@shopify/app-bridge@1.16.0\",\"/Users/iskandarkurbanov/Desktop/Udemy Courses/shopify-script-tag-app-course\"]],\"_from\":\"@shopify/app-bridge@1.16.0\",\"_id\":\"@shopify/app-bridge@1.16.0\",\"_inBundle\":false,\"_integrity\":\"sha512-ym+ibTAzhYeqnvA42ZhR46bRrI5krFqPzx4yshB3CRqfelbdoUewbUBs0Qi4CYNqfzm0WAp1xOzmKo5hbU5IBw==\",\"_location\":\"/@shopify/app-bridge\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"version\",\"registry\":true,\"raw\":\"@shopify/app-bridge@1.16.0\",\"name\":\"@shopify/app-bridge\",\"escapedName\":\"@shopify%2fapp-bridge\",\"scope\":\"@shopify\",\"rawSpec\":\"1.16.0\",\"saveSpec\":null,\"fetchSpec\":\"1.16.0\"},\"_requiredBy\":[\"/@shopify/app-bridge-react\",\"/@shopify/polaris\"],\"_resolved\":\"https://registry.npmjs.org/@shopify/app-bridge/-/app-bridge-1.16.0.tgz\",\"_spec\":\"1.16.0\",\"_where\":\"/Users/iskandarkurbanov/Desktop/Udemy Courses/shopify-script-tag-app-course\",\"author\":{\"name\":\"Shopify Inc.\"},\"bugs\":{\"url\":\"https://github.com/Shopify/app-bridge/issues\"},\"description\":\"[![Build Status](https://travis-ci.com/Shopify/app-bridge.svg?token=RBRyvqQyN525bnfz7J8p&branch=master)](https://travis-ci.com/Shopify/app-bridge) [![codecov](https://codecov.io/gh/Shopify/app-bridge/branch/master/graph/badge.svg?token=nZ21m39Dr6)](https://codecov.io/gh/Shopify/app-bridge) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md) [![npm version](https://badge.fury.io/js/%40shopify%2Fapp-bridge.svg)](https://badge.fury.io/js/%40shopify%2Fapp-bridge.svg) [![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/@shopify/app-bridge.svg)](https://img.shields.io/bundlephobia/minzip/@shopify/app-bridge.svg)\",\"devDependencies\":{\"@types/node\":\"^10.12.5\",\"typescript\":\"3.2.1\"},\"files\":[\"/actions/\",\"/client/\",\"/umd/\",\"/util/\",\"/validate/\",\"/MessageTransport.d.ts\",\"/MessageTransport.js\",\"/development.d.ts\",\"/development.js\",\"/index.d.ts\",\"/index.js\",\"/production.d.ts\",\"/production.js\"],\"gitHead\":\"bc5f196b5270a46926ded456f6052ae3845e1acf\",\"homepage\":\"https://github.com/Shopify/app-bridge#readme\",\"jsdelivr\":\"umd/index.js\",\"license\":\"MIT\",\"main\":\"index.js\",\"name\":\"@shopify/app-bridge\",\"private\":false,\"publishConfig\":{\"access\":\"public\",\"@shopify:registry\":\"https://registry.npmjs.org\"},\"repository\":{\"type\":\"git\",\"url\":\"git+ssh://git@github.com/Shopify/app-bridge.git\"},\"scripts\":{\"build\":\"yarn build:tsc && yarn build:umd\",\"build:tsc\":\"NODE_ENV=production tsc\",\"build:umd\":\"NODE_ENV=production webpack -p\",\"check\":\"tsc --pretty --noEmit\",\"clean\":\"cat package.json | node -pe \\\"JSON.parse(require('fs').readFileSync('/dev/stdin').toString()).files.map(f => './'+f).join(' ')\\\" | xargs rm -rf\",\"pack\":\"yarn pack\",\"size\":\"size-limit\"},\"sideEffects\":false,\"size-limit\":[{\"limit\":\"16 KB\",\"path\":\"production.js\"}],\"types\":\"index.d.ts\",\"unpkg\":\"umd/index.js\",\"version\":\"1.16.0\"}");
 
 /***/ }),
 
@@ -65148,10 +65148,10 @@ module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2Fscript-tag-app%2Fpages%2Fscript-page.js!./":
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2Fscript-tag-app%2Fpages%2Fscript-page.js ***!
-  \*******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2FUdemy%20Courses%2Fshopify-script-tag-app-course%2Fpages%2Fscript-page.js!./":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2FUdemy%20Courses%2Fshopify-script-tag-app-course%2Fpages%2Fscript-page.js ***!
+  \****************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -67520,7 +67520,7 @@ function ScriptPage() {
       createScripts({
         variables: {
           input: {
-            src: "https://d733e9bf.ngrok.io/test-script.js",
+            src: "https://b056b7566d2b.ngrok.io/test-script.js",
             displayScope: "ALL"
           }
         },
@@ -67560,14 +67560,14 @@ function ScriptPage() {
 
 /***/ }),
 
-/***/ 1:
-/*!***********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2Fscript-tag-app%2Fpages%2Fscript-page.js ***!
-  \***********************************************************************************************************************************************************/
+/***/ 2:
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2FUdemy%20Courses%2Fshopify-script-tag-app-course%2Fpages%2Fscript-page.js ***!
+  \********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2Fscript-tag-app%2Fpages%2Fscript-page.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2Fscript-tag-app%2Fpages%2Fscript-page.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2FUdemy%20Courses%2Fshopify-script-tag-app-course%2Fpages%2Fscript-page.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fscript-page&absolutePagePath=%2FUsers%2Fiskandarkurbanov%2FDesktop%2FUdemy%20Courses%2Fshopify-script-tag-app-course%2Fpages%2Fscript-page.js!./");
 
 
 /***/ }),
@@ -67583,5 +67583,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=script-page.js.map

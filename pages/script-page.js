@@ -71,12 +71,12 @@ function ScriptPage() {
                 createScripts({
                   variables: {
                     input: {
-                      src: "https://d733e9bf.ngrok.io/test-script.js",
-                      displayScope: "ALL"
-                    }
+                      src: "https://b056b7566d2b.ngrok.io/test-script.js",
+                      displayScope: "ALL",
+                    },
                   },
-                  refetchQueries: [{ query: QUERY_SCRIPTTAGS }]
-                })
+                  refetchQueries: [{ query: QUERY_SCRIPTTAGS }],
+                });
               }}
             >
               Create Script Tag

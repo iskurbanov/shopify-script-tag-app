@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -278,14 +278,14 @@ function Index() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/iskandarkurbanov/Desktop/script-tag-app/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/iskandarkurbanov/Desktop/Udemy Courses/shopify-script-tag-app-course/pages/index.js */"./pages/index.js");
 
 
 /***/ }),

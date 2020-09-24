@@ -1,3 +1,13 @@
+const script = document.createElement("script");
+script.src = "https://code.jquery.com/jquery-3.4.1.min.js";
+script.type = "text/javascript";
+script.onreadystatechange = handler;
+script.onload = handler;
+document.getElementsByTagName("head")[0].appendChild(script);
+
+
+function handler() {
+
 const body = $('body');
 
 body.css({
@@ -56,10 +66,15 @@ const makeApp = products => {
 }
 
 
-fetch('https://cors-anywhere.herokuapp.com/https://d733e9bf.ngrok.io/api/products?shop=shop=sample-udemy-app-store.myshopify.com')
-    .then(res => res.json())
-    .then(data => {
-        makeApp(data.data)
-        console.log(data)
-    })
-    .catch(error => console.log(error))
+fetch(
+  `https://cors-anywhere.herokuapp.com/https://b056b7566d2b.ngrok.io/api/products?shop=${shop}`
+)
+  .then((res) => res.json())
+  .then((data) => {
+    makeApp(data.data);
+    console.log(data);
+  })
+  .catch((error) => console.log(error));
+
+
+}

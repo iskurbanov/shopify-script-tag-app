@@ -4797,7 +4797,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/iskandarkurbanov/Desktop/script-tag-app/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/iskandarkurbanov/Desktop/Udemy Courses/shopify-script-tag-app-course/.next");
       return error;
     }
   };
