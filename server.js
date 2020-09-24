@@ -63,7 +63,7 @@ server.use(router.routes());
 app.prepare().then(() => {
   
   
-  server.use(session(server));
+  server.use(session({ sameSite: 'none', secure: true }, server));
   server.keys = [SHOPIFY_API_SECRET_KEY];
 
   server.use(
@@ -97,7 +97,6 @@ app.prepare().then(() => {
     await handle(ctx.req, ctx.res);
     ctx.respond = false;
     ctx.res.statusCode = 200;
-    return
   });
 
   server.listen(port, () => {
