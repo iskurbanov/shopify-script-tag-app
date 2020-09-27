@@ -24,10 +24,6 @@
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-    ],
-    "/script-page": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
     ]
   }
 }
