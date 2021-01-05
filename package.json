@@ -22,7 +22,7 @@
     "@shopify/polaris": "^4.13.0",
     "@zeit/next-css": "^1.0.1",
     "apollo-boost": "^0.4.7",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "graphql": "^14.6.0",
